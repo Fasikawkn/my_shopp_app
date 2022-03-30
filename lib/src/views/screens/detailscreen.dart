@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gtk_flutter/src/views/screens/cartscreen.dart';
 import 'homepage.dart';
 
 class DetailScreen extends StatefulWidget {
@@ -262,6 +263,16 @@ class _DetailScreenState extends State<DetailScreen> {
             ),
             onPressed: () {
               debugPrint('Checked out');
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (context) => CartScreen(
+                    image: widget.image,
+                    name: widget.name,
+                    price: widget.price,
+                  ),
+                ),
+              );
             },
           ),
         )

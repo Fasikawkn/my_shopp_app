@@ -222,7 +222,7 @@ class _HomePageState extends State<HomePage> {
                                 builder: (context) => const DetailScreen(
                                       name: 'Man Long- Shirt',
                                       price: 30.0,
-                                      image: 'clothe_one.jpg',
+                                      image: 'men_shirt_img.jpg',
                                     )));
                       },
                       child: const SingleProduct(
